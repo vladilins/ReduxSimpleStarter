@@ -5,7 +5,8 @@ const initialState = [];
 export default (state = initialState, { type, payload }) => {
   switch (type) {
     case FETCH_WEATHER:
-      return { ...state, ...payload.data };
+      console.log(state);
+      return [payload.data, ...state];
 
     default:
       return state;

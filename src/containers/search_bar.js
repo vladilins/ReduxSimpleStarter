@@ -44,10 +44,8 @@ export class SearchBar extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({});
-
 const mapDispatchToProps = {
   fetchWeather,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);
+export default connect(null, mapDispatchToProps)(SearchBar);
